@@ -8,6 +8,7 @@ app.set('views', './views');
 
 console.log(process.env.BUILD_NUMBER)
 
+// Function to print hello world!
 app.get('/', function (req, res) {
   console.log('Hello World request.');
   res.render('index', { title: 'Hello', message: 'Hello Worlld!', 
